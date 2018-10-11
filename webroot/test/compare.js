@@ -77,7 +77,7 @@ var compare = (function(document, window) {
                 resp1 = JSON.parse(resp1);
             }
             if(typeof(resp2) == "string") {
-                resp1 = JSON.parse(resp2);
+                resp2 = JSON.parse(resp2);
             }
 
             resp1Str = a1[2] ? a1[2].responseText : "Dummy1";
