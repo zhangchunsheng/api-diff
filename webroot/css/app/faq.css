@@ -1,0 +1,427 @@
+@charset "UTF-8";.faqtitle,.vfaq,body {
+    width: 100%
+}
+
+.faqinfo,.faqinfohead,.left {
+    float: left
+}
+
+.faq_one .btn,.faq_title li {
+    cursor: pointer;
+    text-align: center
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent
+}
+
+i {
+    font-style: normal
+}
+
+b {
+    font-weight: 400
+}
+
+a {
+    outline: 0;
+    text-decoration: none
+}
+
+a:active {
+    background-color: none
+}
+
+fieldset {
+    border: 0
+}
+
+.faq_content,.faq_title {
+    border: 1px solid #e1e2e5;
+    box-sizing: border-box
+}
+
+body {
+    background: #F4F4F4;
+    font: 12px 'Microsoft YaHei','Hiragino Sans GB',Arial,Helvetica,sans-serif;
+    color: #212121;
+    font-family: "微软雅黑",Helvetica,STHeiTi,sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    word-break: break-all
+}
+
+.border-bottom,.border-top,.faqlist {
+    background-repeat: repeat-x;
+    background-size: auto 1px
+}
+
+.faqinfo,.faqinfohead,.faqlist p {
+    line-height: 21px
+}
+
+.vfaq {
+    box-sizing: border-box
+}
+
+.border-top,.faqlist {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF4eHhAAAAAwi52gAAAAJ0Uk5T/wDltzBKAAAAEElEQVR42mJgYGBgZAQIMAAACQAD7/z9nAAAAABJRU5ErkJggg==);
+    background-position: 0 0;
+    padding-top: 1px
+}
+
+.border-bottom {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF4eHhAAAAAwi52gAAAAJ0Uk5T/wDltzBKAAAAEElEQVR42mJgZGRgYAAIMAAADwADgQiWJQAAAABJRU5ErkJggg==);
+    background-position: 0 bottom;
+    padding-bottom: 1px
+}
+
+.border-top-bottom {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF4eHhAAAAAwi52gAAAAJ0Uk5T/wDltzBKAAAAEElEQVR42mJgYGBgZAQIMAAACQAD7/z9nAAAAABJRU5ErkJggg==),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF4eHhAAAAAwi52gAAAAJ0Uk5T/wDltzBKAAAAEElEQVR42mJgZGRgYAAIMAAADwADgQiWJQAAAABJRU5ErkJggg==);
+    background-repeat: repeat-x,repeat-x;
+    background-position: 0 0,0 bottom;
+    background-size: auto 1px,auto 1px;
+    padding: 1px 0
+}
+
+.border-right {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFUlEQVQImWP8//8/w6NHj/4zMUABAFnEBqZ7dkRgAAAAAElFTkSuQmCC);
+    background-repeat: repeat-y;
+    background-position: right 0;
+    background-size: 1px auto
+}
+
+.faqtitle {
+    box-sizing: border-box;
+    display: block;
+    padding: 18px 12px 12px
+}
+
+.faqtitle i {
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    background-color: #fb7299;
+    vertical-align: middle
+}
+
+.faqlist,.faqlist .listhead {
+    width: 100%
+}
+
+.faqtitle span {
+    font-size: 15px;
+    color: #666;
+    margin-left: 10px;
+    vertical-align: middle
+}
+
+.faqlist {
+    display: block;
+    box-sizing: border-box;
+    padding: 16px 12px 24px;
+    background-color: #fff
+}
+
+.faqlist .listhead i {
+    width: 34px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.faqlist .listhead span {
+    font-size: 16px;
+    color: #212121;
+    margin-left: 4px;
+    vertical-align: middle
+}
+
+.faqlist p {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #666
+}
+
+.faqinfo,.faqinfohead {
+    font-size: 13px;
+    color: #666
+}
+
+.v1 {
+    background: url(/images/vip/faq/1080.png) center center no-repeat;
+    background-size: cover
+}
+
+.v5 {
+    background: url(/images/vip/faq/qxgk.png) center center no-repeat;
+    background-size: cover
+}
+
+.v2 {
+    background: url(/images/vip/faq/talk.png) center center no-repeat;
+    background-size: cover
+}
+
+.v3 {
+    background: url(/images/vip/faq/light.png) center center no-repeat;
+    background-size: cover
+}
+
+.v4 {
+    background: url(/images/vip/faq/space.png) center center no-repeat;
+    background-size: cover
+}
+
+.yv1 {
+    background: url(/images/vip/faq/bpay.png) center center no-repeat;
+    background-size: cover
+}
+
+.yv2 {
+    background: url(/images/vip/faq/redname.png) center center no-repeat;
+    background-size: cover
+}
+
+.yv3 {
+    background: url(/images/vip/faq/game.png) center center no-repeat;
+    background-size: cover
+}
+
+.yv4 {
+    background: url(/images/vip/faq/salary.png) center center no-repeat;
+    background-size: cover
+}
+
+.faqtips {
+    margin: 18px 0 10px 12px;
+    color: #fb7299;
+    font-size: 13px
+}
+
+.faqinfo.fixbottom,.faqinfohead.fixbottom {
+    margin-bottom: 30px
+}
+
+.faqinfo {
+    width: 84%
+}
+
+.faqinfohead {
+    margin-left: 12px
+}
+
+.faqmsg {
+    width: 100%;
+    overflow: hidden
+}
+
+.pcbody {
+    background-color: #fff
+}
+
+.vip_faq {
+    overflow: hidden;
+    width: 980px;
+    margin: 10px auto 0
+}
+
+.vip_faq p {
+    font-size: 16px;
+    color: #666
+}
+
+.faq_title {
+    width: 100%;
+    padding: 18px 30px 0;
+    background-color: #f4f5f7;
+    height: 120px
+}
+
+.faq_title .current .faq_arrow,.faq_title .faq_arrow {
+    bottom: -32px;
+    background: url(/images/vip/faq/faqarrow.png) no-repeat
+}
+
+.faq_title .current .icon_pri {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto
+}
+
+.faq_title .current .icon_pri .img_normal {
+    display: none
+}
+
+.faq_title .current .icon_pri .img_current {
+    display: block
+}
+
+.faq_title .current .faq_arrow {
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 22px;
+    left: 36%
+}
+
+.faq_title .icon_pri {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto
+}
+
+.faq_title .icon_pri .img_current {
+    display: none
+}
+
+.faq_title li {
+    float: left;
+    position: relative;
+    display: block;
+    width: 114px
+}
+
+.faq_title .faq_name {
+    font-size: 12px;
+    color: #212121
+}
+
+.faq_title .faq_arrow {
+    display: none;
+    position: absolute;
+    width: 34px;
+    height: 22px;
+    left: 40px
+}
+
+.faq_content {
+    width: 100%;
+    border-top: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,.14);
+    background: #FAFAFA;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    border-radius: 4px;
+    padding: 42px 48px 64px;
+    min-height: 400px
+}
+
+.faq_one {
+    width: 100%;
+    position: relative
+}
+
+.faq_one .faq_one_left {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 242px;
+    margin-bottom: 40px
+}
+
+.faq_one .faq_one_left h3 {
+    font-size: 24px;
+    color: #212121;
+    margin-bottom: 16px
+}
+
+.faq_one .faq_one_left p {
+    font-size: 16px;
+    color: #666
+}
+
+.faq_one .btn {
+    width: 222px;
+    height: 48px;
+    line-height: 48px;
+    position: absolute;
+    border-radius: 4px;
+    top: 3px;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+    background-color: #f66
+}
+
+.faq_one .btn:hover {
+    background-color: #f88
+}
+
+.faq_pri_info {
+    margin-bottom: 40px
+}
+
+.faq_pri_info fieldset {
+    display: block;
+    height: 40px;
+    border-top: 1px solid #dedede;
+    padding-left: 435px
+}
+
+.faq_pri_info fieldset legend {
+    width: 186px;
+    font-size: 24px;
+    line-height: 40px;
+    color: #212121;
+    text-align: center
+}
+
+.faq_foot,.faq_last,.faq_two,.faq_use_pic {
+    width: 100%
+}
+
+.faq_two {
+    margin-bottom: 34px
+}
+
+.faq_last p {
+    width: 100%;
+    margin-bottom: 30px;
+    line-height: 30px
+}
+
+.faq_foot {
+    box-sizing: border-box;
+    padding: 0 188px 0 48px;
+    position: relative
+}
+
+.faq_foot .foot_title {
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 18px
+}
+
+.faq_foot p {
+    font-size: 14px;
+    color: #999;
+    line-height: 21px
+}
+
+.faq_foot .faq_qrcode {
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 40px
+}
+
+.top,.top_bg {
+    height: 106px
+}
+
+.top {
+    background: url(/images/vip/rl_top.png);
+    width: 980px;
+    margin: 0 auto
+}
+
+.top_bg {
+    width: 100%;
+    background: url(/images/vip/rl_topbg.png) repeat-x
+}

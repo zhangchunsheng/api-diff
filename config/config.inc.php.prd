@@ -1,0 +1,60 @@
+<?php
+$__globalConfig_Db_master = array(
+    'database_type' => 'mysql',
+    'server' => 'localhost',
+    'port' => 3306,
+    'charset' => 'utf8',
+    'username' => 'apidiff',
+    'password' => '',
+);
+
+$__globalConfig = array(
+    'server_name' => 'apidiff.luomor.com',
+    'url' => array(
+
+    ),
+    'databases' => array(
+        'servers' => array(
+            'writer' => $__globalConfig_Db_master,
+        ),
+        'writers' => array(
+            'lm_apidiff' => 'writer',
+        ),
+    ),
+    'cache' => array(
+        'default'   =>'redis',
+        'redis' => array(
+            'host' => array('localhost'),
+            'prefix' => 0,
+            'persistent' => 1,
+        ),
+        'aerospike' => [
+            "hosts" => [
+                [ "addr" => "localhost", "port" => 3000 ],
+            ],
+            "shm"   => [ ],
+        ]
+    ),
+    'queue' => array(
+        'rabbitmq' => array(
+            "luomor_f1" => array (
+                'host' => array (
+                    'localhost',
+                ),
+                'port' => 5672,
+                'login' => 'apidiff',
+                'password' => 'apidiff',
+            ),
+            "luomor_f2" => array (
+                'host' => array (
+                    'localhost',
+                ),
+                'port' => 5672,
+                'login' => 'apidiff',
+                'password' => 'apidiff',
+            ),
+        ),
+    ),
+);
+
+return $__globalConfig;
