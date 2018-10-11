@@ -8,4 +8,10 @@ class IndexController extends ApplicationController {
 
         $this->renderJsonEx($ret);
     }
+
+    public function compareAction() {
+        $ret = array();
+
+        $this->renderJsonEx($ret);
+    }
 }
