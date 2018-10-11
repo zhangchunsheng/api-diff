@@ -73,6 +73,13 @@ var compare = (function(document, window) {
                 "key": "Dummy2"
             };
 
+            if(typeof(resp1) == "string") {
+                resp1 = JSON.parse(resp1);
+            }
+            if(typeof(resp2) == "string") {
+                resp1 = JSON.parse(resp2);
+            }
+
             resp1Str = a1[2] ? a1[2].responseText : "Dummy1";
             resp2Str = a2[2] ? a2[2].responseText : "Dummy2";
 
