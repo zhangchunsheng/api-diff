@@ -27,8 +27,8 @@ var compare = (function(document, window) {
                 statusElem = $("#STATUS");
             results1Elem.html("URL1 Result");
             results2Elem.html("URL2 Result");
-            results1Url.html("URL1")
-            results2Url.html("URL2")
+            results1Url.html("URL1");
+            results2Url.html("URL2");
             resultsDiff.html("Results Diff");
             statusElem.html("STATUS = UNKNOWN");
         },
