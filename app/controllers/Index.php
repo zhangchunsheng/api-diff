@@ -9,9 +9,18 @@ class IndexController extends ApplicationController {
         $this->renderJsonEx($ret);
     }
 
-    public function compareAction() {
-        $ret = array();
+    public function requestAction() {
+        try {
+            $url = \LM\Input::post("url");
+            \LM\Checker::notempty($url, "url");
 
-        $this->renderJsonEx($ret);
+            $json = \LM\HttpRequest::post($url, array());
+
+            echo $json;
+            exit();
+        } catch(Exception $e) {
+            $this->processException(__CLASS__, __METHOD__, $e);
+        }
+
     }
 }

@@ -37,7 +37,15 @@ var compare = (function(document, window) {
             if (!url) {
                 return "";
             }
-            return $.get(url);
+            var requestUrl = "/index/request";
+            var data = {
+                url: url
+            };
+            return $.ajax({
+                url: requestUrl,
+                type: 'post',
+                data: data
+            });
         },
 
         /**
