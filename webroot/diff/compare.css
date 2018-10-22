@@ -39,6 +39,8 @@ input {
   width: 300px;
 }
 #RESULTS_1, #RESULTS_2 {
+  width: 90%;
+  height: 600px;
   margin: 10px;
   padding: 10px;
 }

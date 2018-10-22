@@ -141,6 +141,44 @@ var compare = (function(document, window) {
     return {
         init: function() {
             // Add event handler
+            var json1 = '{\n' +
+                '"driver_level_up_config_id": 55,\n' +
+                '"city": "bj",\n' +
+                '"order_num": 1,\n' +
+                '"age": 18,\n' +
+                '"car_age": 1,\n' +
+                '"license_age": 1,\n' +
+                '"status": 1,\n' +
+                '"operator": "1",\n' +
+                '"update_time": 1539931328,\n' +
+                '"upload_license": 1,\n' +
+                '"audit_license": 1,\n' +
+                '"show_condition": 1,\n' +
+                '"driverLevelUpConfigId": 55,\n' +
+                '"orderNum": 1,\n' +
+                '"carAge": 1,\n' +
+                '"licenseAge": 1,\n' +
+                '"updateTime": 1539931328,\n' +
+                '"uploadLicense": 1,\n' +
+                '"auditLicense": 1,\n' +
+                '"showCondition": 1\n' +
+                '}';
+            var json2 = '{\n' +
+                '"licenseAge": 1,\n' +
+                '"driverLevelUpConfigId": 55,\n' +
+                '"updateTime": 1539931328,\n' +
+                '"status": 1,\n' +
+                '"orderNum": 1,\n' +
+                '"age": 18,\n' +
+                '"operator": "1",\n' +
+                '"carAge": 1,\n' +
+                '"city": "bj",\n' +
+                '"uploadLicense": 1,\n' +
+                '"auditLicense": 1,\n' +
+                '"showCondition": 1\n' +
+                '}';
+            $("#RESULTS_1").val(json1);
+            $("#RESULTS_2").val(json2);
             $("#compare").on("click", _handleFormSubmit);
         }
     };
