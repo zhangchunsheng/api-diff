@@ -19,7 +19,7 @@ class IndexController extends ApplicationController {
             $timer = new \LM\Timer();
             $json = \LM\HttpRequest::post($url, array());
             $ms = $timer->getMs();
-            \LM\LoggerHelper::INFO('API', $ms, 'GET', ['api' => $url, 'args' => current($args), 'result' => json_decode($json, true)]);
+            \LM\LoggerHelper::INFO('API', $ms, 'GET', ['api' => $url, 'args' => array(), 'result' => json_decode($json, true)]);
 
             echo $json;
             exit();
