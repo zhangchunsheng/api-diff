@@ -21,6 +21,11 @@ input {
   border: 1px solid #C0C0C0;
   padding: 10px;
 }
+#RESULT_ARRAY_DIFF {
+  margin-top: 10px;
+  border: 1px solid #C0C0C0;
+  padding: 10px;
+}
 #RESULTS_1_CONTAINER, #RESULTS_2_CONTAINER {
   width: 48%;
   margin: 10px 0;
