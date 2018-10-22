@@ -39,7 +39,7 @@ var compare = (function(document, window) {
             }
             var requestUrl = "/index/request";
             var data = {
-                url: url
+                url: encodeURIComponent(url)
             };
             return $.ajax({
                 url: requestUrl,
