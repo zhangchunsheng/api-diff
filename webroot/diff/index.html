@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compare Json</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="jsondiff/css/html.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="jsondiff/css/annotated.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="jsonview/jquery.jsonview.css" type="text/css" media="screen" />
+<link href="compare.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid">
+    <h1>Compare Json</h1>
+    <input id="compare" class="submit_btn" type="button" value="Compare">
+    <div id="RESULTS">
+        <div id="RESULTS_1_CONTAINER">
+            <textarea id="RESULTS_1"></textarea>
+        </div>
+        <div id="RESULTS_2_CONTAINER">
+            <textarea id="RESULTS_2"></textarea>
+        </div>
+    </div>
+    <div id="RESULTS_DIFF">Results Diff</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="jsondiff/js/jsondiffpatch.min.js"></script>
+<script type="text/javascript" src="jsondiff/js/jsondiffpatch-formatters.min.js"></script>
+<script type="text/javascript" src="jsondiff/js/diff_match_patch_uncompressed.js"></script>
+<script type="text/javascript" src="jsonview/jquery.jsonview.js"></script>
+<script src="compare.js"></script>
+</body>
+</html>
