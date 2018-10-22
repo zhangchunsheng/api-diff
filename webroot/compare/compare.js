@@ -61,6 +61,7 @@ var compare = (function(document, window) {
                 results1Url = $("#RESULTS_1_URL"),
                 results2Url = $("#RESULTS_2_URL"),
                 resultsDiff = $("#RESULTS_DIFF"),
+                resultArrayDiff = $("#RESULT_ARRAY_DIFF"),
                 statusElem = $("#STATUS"),
                 url1 = $("#API_URL_1").val(),
                 url2 = $("#API_URL_2").val(),
@@ -98,6 +99,7 @@ var compare = (function(document, window) {
             if (_deepCompare(resp1, resp2)) {
                 statusElem.html("STATUS = EQUAL");
                 resultsDiff.html("NO DIFF SINCE THEY ARE EQUAL");
+                resultArrayDiff.html("NO DIFF SINCE THEY ARE EQUAL");
             } else {
                 statusElem.html("STATUS = NOT EQUAL");
 
@@ -106,6 +108,15 @@ var compare = (function(document, window) {
                 resultsDiff.html("");
                 resultsDiff.html(jsondiffpatch.formatters.html.format(delta, resp1));
                 jsondiffpatch.formatters.html.hideUnchanged();
+
+                if(resp1.result.hasOwnProperty("list") && resp2.result.hasOwnProperty("list")) {
+                    var array1 = resp1.result.list[0];
+                    var array2 = resp2.result.list[0];
+                    delta = jsondiffpatch.diff(array1, array2);
+                    resultArrayDiff.html("");
+                    resultArrayDiff.html(jsondiffpatch.formatters.html.format(delta, array1));
+                    jsondiffpatch.formatters.html.hideUnchanged();
+                }
             }
         },
 
