@@ -14,6 +14,8 @@ class IndexController extends ApplicationController {
             $url = \LM\Input::post("url");
             \LM\Checker::notempty($url, "url");
 
+            $url = html_entity_decode($url);
+
             $timer = new \LM\Timer();
             $json = \LM\HttpRequest::post($url, array());
             $ms = $timer->getMs();
