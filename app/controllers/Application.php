@@ -70,7 +70,7 @@ class ApplicationController extends Yaf\Controller_Abstract {
      */
     public function init() {
         // Set the layout.
-        $this->getView()->setLayout($this->layout);
+        //$this->getView()->setLayout($this->layout);
 
         // Assign application config file to this controller
         $this->config = Yaf\Application::app()->getConfig();
@@ -133,8 +133,8 @@ class ApplicationController extends Yaf\Controller_Abstract {
         $this->_referrerUrl = isset($_SERVER["HTTP_REFERER"]) ? $_SERVER["HTTP_REFERER"] : "";
 
         $this->getView()->assignRef("referrerUrl", $this->_referrerUrl);
-        $this->view = $this->getView();
-        $this->view->assign('viewPath', APP_PATH . 'views');
+        $this->appview = $this->getView();
+        $this->appview->assign('viewPath', APP_PATH . 'views');
     }
 
     protected function _getFlagValue($fieldName) {

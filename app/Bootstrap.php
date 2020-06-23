@@ -41,7 +41,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract {
     }
 
     public function _initRequest(Yaf\Dispatcher $dispatcher) {
-        $dispatcher->setRequest(new Request());
+        //$dispatcher->setRequest(new Request());
     }
 
     public function _initDatabase(Yaf\Dispatcher $dispatcher) {
@@ -78,8 +78,8 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract {
     }
 
     public function _initLayout(Yaf\Dispatcher $dispatcher) {
-        $layout = new Layout($this->config->application->layout->directory);
-        $dispatcher->setView($layout);
+        //$layout = new Layout($this->config->application->layout->directory);
+        //$dispatcher->setView($layout);
     }
 
     /**
